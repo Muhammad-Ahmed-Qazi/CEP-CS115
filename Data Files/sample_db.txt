@@ -1,0 +1,5 @@
+Students
+{'CS-24045': ['CS-24045', 'Muhammad Ahmed Qazi', 'qazi4705100@cloud.neduet.edu.pk', 'A']}
+
+Courses
+{'CS-115': ['CS-115', 'Computer Programming', 4, 'Dr. Maria Waqas']}
