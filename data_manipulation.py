@@ -1,13 +1,13 @@
 from filing import *
 
-def add_record(db, table):
-    fields = eval(get_fields(open(f"./System Files/{db}.txt", "r"))) # Static argument for database file
+def add_record(db_name, table):
+    fields = eval(get_fields(db_name)) # Static argument for database file
     fields = fields[table]
     record = get_record_input(fields)
-    orig_table = get_table("Students", open("./Data Files/sample_db.txt", "r"))
+    orig_table = get_table("Students", db_name)
     table = eval(orig_table)
     table[record[0]] = record
-    write_table(orig_table, str(table), "./Data Files/sample_db.txt")
+    write_table(orig_table, str(table), db_name)
 
 def get_record_input(fields):
     record = list()
