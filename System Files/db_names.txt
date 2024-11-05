@@ -1,1 +1,1 @@
-{'sample_db': 'Sample database'}
+Sample
