@@ -1,4 +1,5 @@
 import os
+import linecache
 
 def create_path(directory, file_name):
     if directory == 's':
@@ -6,14 +7,17 @@ def create_path(directory, file_name):
     elif directory == 'd':
         return f"{os.getcwd()}/Data Files/{file_name}.txt"
 
-def setup_database(name, info):
+def setup_database(db_name, info):
     with open(create_path('s', 'db_names'), 'a+') as file:
-        file.write(name + '\n')
+        file.write(db_name + '\n')
 
     # Writing formatted data for system file
-    with open(create_path('s', name), "w") as file:
+    with open(create_path('s', db_name), "w") as file:
         file.write(info[0])
 
-    with open(create_path('d', name), "w") as file:
+    with open(create_path('d', db_name), "w") as file:
         file.write(info[1])
 
+def get_fields(db_name):
+    # fields = linecache.getlines(create_path('s', db_name), )
+    pass
