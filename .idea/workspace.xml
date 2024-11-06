@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="34d8cd4f-2e63-4200-bf38-dbc56507a6d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Databases Entries.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Display Database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Databases Entries.py" beforeDir="false" afterPath="$PROJECT_DIR$/Databases Entries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/.idea/New folder.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/DBMS Interface.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,16 +40,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Databases Entries.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;usman.wip&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/NED University/GitHub/CEP-CS115&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Databases Entries.executor": "Run",
+    "Python.Display Database.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "usman.wip",
+    "last_opened_file_path": "F:/NED University/GitHub/CEP-CS115",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -57,6 +75,8 @@
       <workItem from="1730825668789" duration="11000" />
       <workItem from="1730825784404" duration="75000" />
       <workItem from="1730825880052" duration="104000" />
+      <workItem from="1730830271018" duration="36000" />
+      <workItem from="1730896984017" duration="9856000" />
     </task>
     <servers />
   </component>
@@ -64,6 +84,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CEP_CS115$Databases_Entries.coverage" NAME="Databases Entries Coverage Results" MODIFIED="1730825977970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CEP_CS115$Display_Database.coverage" NAME="Display Database Coverage Results" MODIFIED="1730911583800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CEP_CS115$Databases_Entries.coverage" NAME="Databases Entries Coverage Results" MODIFIED="1730897079967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
