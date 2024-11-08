@@ -5,11 +5,15 @@
     - System file: Stores the names of fields and their lengths.
     - Data file: Stores the actual records in a structured format.
 """
-from file_handler import setup_database
+from file_handler import setup_database, db_list
 
 def create_database():
     # Name of database
     name = input("\nEnter a unique name for the new database: ")
+    db_names = db_list()
+    db_names = [db_name.strip().upper() for db_name in db_names]
+    if name.upper() in db_names:
+        return 0
 
     # Tables in the database
     tables = dict()
@@ -45,7 +49,7 @@ def create_database():
                 break
             print("Invalid choice. Please select a valid field number from the list.")
 
-    setup_database(name, format_data(tables))
+    return setup_database(name, format_data(tables))
 
 def format_data(data):
     sys_info = ""
@@ -69,13 +73,4 @@ def format_data(data):
         primary_keys[table] = data[table][1]
     sys_info += str(primary_keys) + '\n'
 
-    # Formatted string for data file
-    data_info = ""
-    for table in tables:
-        data_info += table + "\n{}\n\n"
-
-    return sys_info, data_info
-
-
-if __name__ == "__main__":
-    pass
+    return sys_info, tables
