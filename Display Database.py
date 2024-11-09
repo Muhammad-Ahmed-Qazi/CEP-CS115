@@ -53,10 +53,11 @@ def display(name_record, field_lengths, primary_keys):
         record_values = database_dict[record_key]
         row=''
 
-        j = 0
-        for values in record_values:
-            row += f'{str(values):{field_lengths[field_names[j]]}} |'
-            j += 1
+        # j = 0
+        for values, field in zip(record_values, field_names):
+            row += f'{str(values):{field_lengths[field]}} |'
+            
+           # j += 1
         print(row.strip())
 
 display(name_record, fields_lengths, primary_keys)
