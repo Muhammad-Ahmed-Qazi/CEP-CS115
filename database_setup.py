@@ -5,13 +5,13 @@
     - System file: Stores the names of fields and their lengths.
     - Data file: Stores the actual records in a structured format.
 """
-from file_handler import setup_database, db_list
+from file_handler import setup_database, get_db_names
 
 def create_database():
     # Name of database
     name = input("\nEnter a unique name for the new database: ")
-    db_names = db_list()
-    db_names = [db_name.strip().upper() for db_name in db_names]
+    db_names = get_db_names()
+    db_names = [db_name.upper() for db_name in db_names]
     if name.upper() in db_names:
         return 0
 

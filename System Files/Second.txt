@@ -1,0 +1,8 @@
+Tables
+['Cars']
+
+Fields & Lengths
+{'Cars': {'Name': 40, 'Company': 40, 'Registration no.': 10}}
+
+Primary Keys
+{'Cars': 'Registration no.'}

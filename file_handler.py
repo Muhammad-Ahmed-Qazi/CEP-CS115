@@ -26,12 +26,12 @@ def setup_database(db_name, info):
 
     return 1
 
-def db_list():
+def get_db_names():
     with open(create_path("db_names"), "r") as file:
         db_names = file.readlines()
         return [db_name.strip() for db_name in db_names]
 
-def tables_list(db_name):
+def get_tables(db_name):
     tables = linecache.getline(create_path(db_name), 2)
     return eval(tables)
 
@@ -39,9 +39,34 @@ def get_fields(db_name):
     fields = linecache.getline(create_path(db_name), 5)
     return eval(fields)
 
-def write_record(db_name, table, info, edit=""):
+def get_primary_keys(db_name):
+    pk = linecache.getline(create_path(db_name), 8)
+    return eval(pk)
+
+def write_record(db_name, table, info):
     with open(create_path(db_name, table), "a") as file:
-        if not edit:
-            file.write(info)
-        else:
-            pass
+        file.write(info)
+
+def record_exists(db_name, table, pk):
+    with open(create_path(db_name, table), "r") as file:
+        for line in file:
+            if pk in line:
+                return line
+    return ""
+
+def get_records(db_name, table):
+    with open(create_path(db_name, table), "r") as file:
+        return file.readlines()
+
+def update_records(db_name, table, record, edit=""):
+    records = get_records(db_name, table)
+    with open(create_path(db_name, table), "w") as file:
+        for line in records:
+            if not edit:
+                if record != line:
+                    file.write(line)
+            else:
+                if record == line:
+                    file.write(edit)
+                    break
+                file.write(line)
