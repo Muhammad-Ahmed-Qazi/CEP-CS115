@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34d8cd4f-2e63-4200-bf38-dbc56507a6d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Editing a Database Record.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data Files/sample_db.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Display Database.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/System Files/sample_db.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Files/Sample/Students.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data Files/Sample/Students.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Editing a Database Record.py" beforeDir="false" afterPath="$PROJECT_DIR$/Editing a Database Record.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +52,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.Display_Database (New)">
+  <component name="RunManager" selected="Python.Editing a Database Record">
     <configuration name="Display_Database (New)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CEP-CS115" />
       <option name="ENV_FILES" value="" />
@@ -172,8 +170,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Display_Database (New)" />
         <item itemvalue="Python.Editing a Database Record" />
+        <item itemvalue="Python.Display_Database (New)" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.file_handler" />
         <item itemvalue="Python.Testing" />
@@ -210,6 +208,8 @@
       <workItem from="1731687031417" duration="3672000" />
       <workItem from="1731724888436" duration="2713000" />
       <workItem from="1731732269989" duration="1207000" />
+      <workItem from="1731818926740" duration="895000" />
+      <workItem from="1731862121061" duration="2114000" />
     </task>
     <servers />
   </component>
@@ -219,10 +219,10 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CEP_CS115$Display_Database.coverage" NAME="Display Database Coverage Results" MODIFIED="1731668385708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CEP_CS115$file_handler.coverage" NAME="file_handler Coverage Results" MODIFIED="1731725472726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CEP_CS115$Display_Database__New_.coverage" NAME="Display_Database (New) Coverage Results" MODIFIED="1731732295355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CEP_CS115$Display_Database__New_.coverage" NAME="Display_Database (New) Coverage Results" MODIFIED="1731862534996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CEP_CS115$Databases_Entries.coverage" NAME="Databases Entries Coverage Results" MODIFIED="1731665557596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CEP_CS115$main.coverage" NAME="main Coverage Results" MODIFIED="1731726478920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/CEP-CS115-muhammad.wip" />
     <SUITE FILE_PATH="coverage/CEP_CS115$Testing.coverage" NAME="Testing Coverage Results" MODIFIED="1731688691910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CEP_CS115$Editing_a_Database_Record.coverage" NAME="Editing a Database Record Coverage Results" MODIFIED="1731727526060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CEP_CS115$Editing_a_Database_Record.coverage" NAME="Editing a Database Record Coverage Results" MODIFIED="1731864186019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
