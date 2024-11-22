@@ -1,4 +1,3 @@
-
 from file_handler import get_db_names, get_fields, get_records, get_tables, update_records
 
 db_names = get_db_names()  # Fetching database names
@@ -23,8 +22,13 @@ fields = get_fields(db_name)[table]  # Fetching fields
 print("field:", fields)
 
 records = get_records(db_name, table)  # Fetching records
+
+original_records = records
+
 records = records[0].strip().split(', ')
 print("record:", records)
+
+
 
 field_names = list(fields.keys())  # Fetching field names
 print("field_names:", field_names)
@@ -39,6 +43,8 @@ def format_data(records):
     return data_info[:-2] + '\n'
 
 def editing_database(db_name, table):
+
+    global original_records
 
     look_record = input("For which record are you working for?: ")          #Looking for the required record
     record_found = False
@@ -62,7 +68,8 @@ def editing_database(db_name, table):
             else:
                 print(f"The length of the input must be from 1 character to {fields[field]} characters")
 
-    update_records(db_name, table, format_data(records))
+    update_records(db_name, table, original_records, format_data(records))
+
     print("Record successfully updated")
 
 #  Call the function to start the process
