@@ -49,7 +49,7 @@ def editing_database(db_name, table):
     look_record = input("For which record are you working for?: ")          #Looking for the required record
     record_found = False
     for record in records:
-        if record == look_record:
+        if record.strip() == look_record.strip():
             record_found = True
             break
 
@@ -61,6 +61,9 @@ def editing_database(db_name, table):
         while True:
 
             edit_record = input(f"Edit record for {field}: ")       # Entering new value for the field
+
+            print(f"Editing field {field} with value: {edit_record}")
+
             if 0 < len(edit_record) <= fields[field]:               # Checking length of the input
                 records[i] = edit_record                            # Update the record at the correct index
                 break
@@ -68,7 +71,11 @@ def editing_database(db_name, table):
             else:
                 print(f"The length of the input must be from 1 character to {fields[field]} characters")
 
-    update_records(db_name, table, original_records, format_data(records))
+    # Format the edited record for writing
+    formatted_edit = format_data(records)
+    print(f"Formatted updated record: {formatted_edit}")
+
+    update_records(db_name, table, look_record, formatted_edit)
 
     print("Record successfully updated")
 
