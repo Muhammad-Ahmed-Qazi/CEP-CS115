@@ -20,13 +20,7 @@ for tble in tables:
 
 table = input("Enter table name: ")  # Entering table name
 
-fields = get_fields(db_name)[table]  # Getting fields
 records = get_records(db_name, table)  # Getting records
-
-field_names = list(fields.keys())  # Getting field names
-
-fetch_record = search_record(db_name, table)
-record = fetch_record.strip().split(",")
 
 #print("Fetch Record",fetch_record)
 
@@ -36,7 +30,14 @@ record = fetch_record.strip().split(",")
 
 #print("Strip Fetch", fetch_record.strip())
 
-def editing_record(db_name, table, record):
+def editing_record(db_name, table):
+
+    fields = get_fields(db_name)[table]  # Getting fields
+
+    field_names = list(fields.keys())  # Getting field names
+
+    fetch_record = search_record(db_name, table)
+    record = fetch_record.strip().split(",")
 
     # Ensure that the record has the correct number of fields
     if len(record) != len(field_names):
@@ -73,6 +74,6 @@ def editing_record(db_name, table, record):
     print("Record successfully updated")
 
 #  Call the function to start the process
-editing_record(db_name, table, record)
+editing_record(db_name, table)
 
 
