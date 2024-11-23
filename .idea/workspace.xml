@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34d8cd4f-2e63-4200-bf38-dbc56507a6d4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Editing a Database Record (New).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Editing a Database Record (Old).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data Files/Sample/Students.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data Files/Sample/Students.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Editing a Database Record.py" beforeDir="false" afterPath="$PROJECT_DIR$/Editing a Database Record.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Files/Second/Cars.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data Files/Second/Cars.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Editing a Database Record.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +41,8 @@
     "Python.Databases Entries.executor": "Run",
     "Python.Display Database.executor": "Run",
     "Python.Display_Database (New).executor": "Run",
-    "Python.Editing a Database Record.executor": "Debug",
+    "Python.Editing a Database Record (New).executor": "Run",
+    "Python.Editing a Database Record.executor": "Run",
     "Python.In Class Exercise-Files.executor": "Run",
     "Python.Practise.executor": "Run",
     "Python.Testing.executor": "Run",
@@ -58,7 +62,30 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Editing a Database Record">
+  <component name="RunManager" selected="Python.Editing a Database Record (New)">
+    <configuration name="Editing a Database Record (New)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CEP-CS115" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Editing a Database Record (New).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Editing a Database Record" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CEP-CS115" />
       <option name="ENV_FILES" value="" />
@@ -128,29 +155,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="CEP-CS115" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Temp/22cafe72-56be-42a3-ab53-858911a3784c_CEP-CS115-muhammad.wip (1).zip.84c/CEP-CS115-muhammad.wip" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Temp/22cafe72-56be-42a3-ab53-858911a3784c_CEP-CS115-muhammad.wip (1).zip.84c/CEP-CS115-muhammad.wip/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CEP-CS115" />
       <option name="ENV_FILES" value="" />
@@ -176,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Editing a Database Record (New)" />
         <item itemvalue="Python.Editing a Database Record" />
         <item itemvalue="Python.In Class Exercise-Files" />
         <item itemvalue="Python.Practise" />
         <item itemvalue="Python.main (3)" />
-        <item itemvalue="Python.main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -222,36 +226,19 @@
       <workItem from="1732197090583" duration="1999000" />
       <workItem from="1732207407043" duration="1148000" />
       <workItem from="1732278839696" duration="1493000" />
+      <workItem from="1732289567759" duration="1098000" />
+      <workItem from="1732332181483" duration="5297000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Editing a Database Record.py</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Editing a Database Record.py</url>
-          <line>77</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Editing a Database Record.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Practise_py$In_Class_Exercise_Files.coverage" NAME="In Class Exercise-Files Coverage Results" MODIFIED="1732211706157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Practise_py$Editing_a_Database_Record.coverage" NAME="Editing a Database Record Coverage Results" MODIFIED="1732211697770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CEP_CS115$Display_Database__New_.coverage" NAME="Display_Database (New) Coverage Results" MODIFIED="1731862534996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Editing_a_Database_Record__Edited__py$Editing_a_Database_Record__New_.coverage" NAME="Editing a Database Record (New) Coverage Results" MODIFIED="1732339323460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CEP_CS115$Databases_Entries.coverage" NAME="Databases Entries Coverage Results" MODIFIED="1731665557596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CEP_CS115$main.coverage" NAME="main Coverage Results" MODIFIED="1731726478920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/CEP-CS115-muhammad.wip" />
     <SUITE FILE_PATH="coverage/CEP_CS115$Testing.coverage" NAME="Testing Coverage Results" MODIFIED="1731688691910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -262,6 +249,7 @@
     <SUITE FILE_PATH="coverage/CEP_CS115$Editing_a_Database_Record.coverage" NAME="Editing a Database Record Coverage Results" MODIFIED="1731864394427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CEP_CS115$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1732195838086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Temp/22cafe72-56be-42a3-ab53-858911a3784c_CEP-CS115-muhammad.wip (1).zip.84c/CEP-CS115-muhammad.wip" />
     <SUITE FILE_PATH="coverage/Practise_py$Practise.coverage" NAME="Practise Coverage Results" MODIFIED="1732197264446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Editing_a_Database_Record_py$Editing_a_Database_Record.coverage" NAME="Editing a Database Record Coverage Results" MODIFIED="1732279361669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Editing_a_Database_Record_py$Editing_a_Database_Record.coverage" NAME="Editing a Database Record Coverage Results" MODIFIED="1732290414098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Editing_a_Database_Record__Edited__py$Editing_a_Database_Record.coverage" NAME="Editing a Database Record Coverage Results" MODIFIED="1732333399419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

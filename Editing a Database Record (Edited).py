@@ -1,6 +1,12 @@
-from file_handler import get_db_names, get_fields, get_records, get_tables, update_records
+from file_handler import get_db_names, get_fields, get_records, get_tables, update_records, get_primary_keys, record_exists
 
 db_names = get_db_names()  # Fetching database names
+
+def search_record(db_name, table):
+    pk = get_primary_keys(db_name)[table]
+
+    pk_data = input(f"\nEnter the value for '{pk}' to get the record: ")
+    return record_exists(db_name, table, pk_data)
 
 i = 1
 for db in db_names:
@@ -21,14 +27,6 @@ table = input("Enter table name: ")             # Enter table name
 fields = get_fields(db_name)[table]  # Fetching fields
 print("field:", fields)
 
-records = get_records(db_name, table)  # Fetching records
-
-original_records = records
-
-records = records[0].strip().split(', ')
-print("record:", records)
-
-
 
 field_names = list(fields.keys())  # Fetching field names
 print("field_names:", field_names)
@@ -44,9 +42,12 @@ def format_data(records):
 
 def editing_database(db_name, table):
 
-    global original_records
+    global original_record
 
-    look_record = input("For which record are you working for?: ")          #Looking for the required record
+    look_record = search_record(db_name, table)
+    records = look_record.split(",")
+
+    #look_record = input("For which record are you working for?: ")          #Looking for the required record
     record_found = False
     for record in records:
         if record.strip() == look_record.strip():
