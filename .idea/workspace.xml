@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34d8cd4f-2e63-4200-bf38-dbc56507a6d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Editing a Database Record (New).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Editing a Database Record (Old).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data Files/Sample/Students.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data Files/Sample/Students.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data Files/Second/Cars.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data Files/Second/Cars.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Editing a Database Record.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Display_Database (New).py" beforeDir="false" afterPath="$PROJECT_DIR$/Display_Database (New).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_manipulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_manipulation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,32 +33,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Databases Entries.executor": "Run",
-    "Python.Display Database.executor": "Run",
-    "Python.Display_Database (New).executor": "Run",
-    "Python.Editing a Database Record (New).executor": "Run",
-    "Python.Editing a Database Record.executor": "Run",
-    "Python.In Class Exercise-Files.executor": "Run",
-    "Python.Practise.executor": "Run",
-    "Python.Testing.executor": "Run",
-    "Python.file_handler.executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main (2).executor": "Run",
-    "Python.main (3).executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "usman.wip",
-    "last_opened_file_path": "F:/NED University/My work/CP Practise Problem",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Databases Entries.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Display Database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Display_Database (New).executor&quot;: &quot;Run&quot;,
+    &quot;Python.Editing a Database Record (New).executor&quot;: &quot;Run&quot;,
+    &quot;Python.Editing a Database Record.executor&quot;: &quot;Run&quot;,
+    &quot;Python.In Class Exercise-Files.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Practise.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Testing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.file_handler.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (2).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (3).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;usman.wip&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/NED University/My work/CP Practise Problem&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.Editing a Database Record (New)">
     <configuration name="Editing a Database Record (New)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CEP-CS115" />
@@ -228,6 +225,9 @@
       <workItem from="1732278839696" duration="1493000" />
       <workItem from="1732289567759" duration="1098000" />
       <workItem from="1732332181483" duration="5297000" />
+      <workItem from="1732350437280" duration="139000" />
+      <workItem from="1732368769768" duration="393000" />
+      <workItem from="1732369872158" duration="206000" />
     </task>
     <servers />
   </component>

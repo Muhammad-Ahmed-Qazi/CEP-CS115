@@ -2,19 +2,19 @@
 #Extracting Files from file_handler
 from file_handler import get_fields, get_records
 
-display_database = input("Enter name of database you want to open: ")   # Entering Name of database
+db_name = input("Enter name of database you want to open: ")   # Entering Name of database
 table = input("Enter name of the table you want to view: ")             #Entering name of the table to view
 
 #   Displaying Records:
 print(f'{table}: ')         # Printing record name
 
-def display(display_database, table):
+def display(db_name, table):
     '''This function is being used to fetch fields, their lengths and the respective records from the table
     in order to view them when the user gives the appropriate prompt'''
 
 
-    fields = get_fields(display_database)[table]        # Fetching fields
-    records = get_records(display_database, table)      # Fetching records
+    fields = get_fields(db_name)[table]        # Fetching fields
+    records = get_records(db_name, table)      # Fetching records
 
     #Iterating on record:
     for i in records:
@@ -57,7 +57,7 @@ def display(display_database, table):
     print(row.strip())
 
 # Calling function to display records:
-display(display_database, table)
+display(db_name, table)
 
 #help(display_database)
 
