@@ -22,26 +22,20 @@ table = input("Enter table name: ")  # Entering table name
 
 records = get_records(db_name, table)  # Getting records
 
-#print("Fetch Record",fetch_record)
-
-#print("Record",record)
-
-#print("Field Names", field_names)
-
-#print("Strip Fetch", fetch_record.strip())
-
 def editing_record(db_name, table):
+    '''This function enables user to edit a record in selected database user entered.'''
 
     fields = get_fields(db_name)[table]  # Getting fields
 
     field_names = list(fields.keys())  # Getting field names
 
     fetch_record = search_record(db_name, table)
+
     record = fetch_record.strip().split(",")
 
-    # Ensure that the record has the correct number of fields
+     #Ensure that the record has the correct number of fields
     if len(record) != len(field_names):
-        print(f"Error: The number of fields in the record does not match the expected number of fields ({len(field_names)}).")
+        print(f"Error: Following Record does not exist!")
         return
 
 
@@ -67,7 +61,6 @@ def editing_record(db_name, table):
 
     # Format the edited record for writing
     formatted_edit = format_data(record)
-    #print(f"Formatted updated record: {formatted_edit}")
 
     update_records(db_name, table, fetch_record, formatted_edit)
 

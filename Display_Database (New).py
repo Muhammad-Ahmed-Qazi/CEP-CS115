@@ -21,8 +21,6 @@ def display(db_name, table):
         element = i.strip()
         element = element.split(', ')     # Converting the string present in the list to separate list separated by commas
 
-    #print(element)
-
     # Fetching Field Lengths And Names
 
     field_lengths = list(fields.values())               # Fetching field lengths

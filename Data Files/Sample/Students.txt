@@ -1,2 +1,2 @@
-CS-24038, Usman Rasheed Siddiqui, siddiqui.uas1@gmail.com, A
-CS024045, Muhammad Ahmed Qazi, xyz@gmail.com, A
+CS-24039, Huzaifa, xyz@gmail.com, A
+CS-24038, Usman Rasheed, abc, A
