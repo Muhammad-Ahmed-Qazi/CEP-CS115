@@ -5,7 +5,7 @@
     - System file: Stores the names of fields and their lengths.
     - Data file: Stores the actual records in a structured format.
 """
-from file_handler import setup_database, get_db_names
+from other_modules.file_handler import setup_database, get_db_names
 
 def create_database(data):
     # Name of database

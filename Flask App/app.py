@@ -1,9 +1,9 @@
 from flask import Flask, flash, render_template, request
 
-from database_setup import create_database
-from file_handler import get_db_names, get_tables
-from data_manipulation import search_record, delete_record, add_record
-from display import *
+from other_modules.database_setup import create_database
+from other_modules.file_handler import get_db_names, get_tables, get_fields
+from other_modules.data_manipulation import search_record, delete_record, add_record, edit_record
+from other_modules.display import *
 
 app = Flask(__name__)
 
@@ -52,13 +52,13 @@ def editing(db_name, table):
     return render_template('editing.html', db_name=db_name, table=table)
 
 @app.route('/opendb/<db_name>/<table>/<operation>', methods=['GET', 'POST'])
-def get_fields(db_name, table, operation):
+def operation_fields(db_name, table, operation):
     if operation == 'add':
         return add_fields(db_name, table)
     elif operation == 'edit_check':
         return edit_check_fields(db_name, table)
     elif operation == 'edit_save':
-        return edit_save_fields(db_name, table)
+        return edit_save_fields(db_name, table, list(request.form.values())[0])
     elif operation == 'delete':
         return delete_fields(db_name, table)
     elif operation == 'search':
@@ -69,14 +69,15 @@ def get_fields(db_name, table, operation):
 def process(db_name, table, operation):
     if operation == 'add':
         return add_record(db_name, table, request.form)
-    elif operation == 'edit':
+    elif operation == 'edit_save':
         return edit_record(db_name, table, request.form)
     elif operation == 'delete':
         return delete_record(db_name, table, search_record(db_name, table, request.form))
     elif operation == 'search':
-        return search_record(db_name, table, request.form)
+        return display_selected(db_name, table, request.form)
+    elif operation == 'display':
+        return display_all(db_name, table)
     return "Invalid operation", 400
-
 
 if __name__ == '__main__':
     app.run(debug=True)

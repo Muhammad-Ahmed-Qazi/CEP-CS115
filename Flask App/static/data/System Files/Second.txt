@@ -1,8 +1,0 @@
-Tables
-['Test 1']
-
-Fields & Lengths
-{'Test 1': {'PK': 45}}
-
-Primary Keys
-{'Test 1': 'PK'}

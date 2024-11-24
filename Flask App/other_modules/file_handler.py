@@ -63,12 +63,8 @@ def get_records(db_name, table):
 
 def update_records(db_name, table, record, edit=""):
     records = get_records(db_name, table)
-    print("Records:", records)
-    print("Edit:", edit)
-    print("Record:", record)
     with open(create_path(db_name, table), "w") as file:
         for line in records:
-            print("Line:", line)
             if not edit:
                 if record != line:
                     file.write(line)

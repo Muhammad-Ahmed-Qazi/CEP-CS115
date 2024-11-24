@@ -143,14 +143,39 @@ function submitFormViaAjax(formId, targetUrl, resultContainerId) {
             return response.text(); // Expect JSON response
         })
         .then(data => {
-            console.log(data)
             // Display the response in the target container
-            // resultContainer.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
             resultContainer.innerHTML = `${data}`
         })
         .catch(error => {
             console.error('Error:', error);
             resultContainer.innerHTML = `
+                <div class="alert alert-danger">An error occurred: ${error.message}</div>
+            `;
+        });
+}
+
+/**
+ * Fetch and display the whole table from Flask.
+ * @param {string} apiUrl - The URL endpoint to fetch the table data from.
+ */
+function displayTable(apiUrl) {
+    const tableContainer = document.getElementById('modalContent');
+
+    // Fetch the table data from Flask
+    fetch(apiUrl)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to fetch table data.');
+            }
+            return response.text(); // Expecting HTML response
+        })
+        .then(html => {
+            // Update the table container with the received HTML
+            tableContainer.innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            tableContainer.innerHTML = `
                 <div class="alert alert-danger">An error occurred: ${error.message}</div>
             `;
         });
