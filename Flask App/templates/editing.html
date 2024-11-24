@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP - {{ db_name }} > {{ table }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/bootstrap-icons.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icons/database-fill.svg') }}" type="image/icon type">
+</head>
+
+<body class="d-flex align-items-center justify-content-center vh-100">
+
+    <div class="position-absolute top-0 start-0 p-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/opendb">Open Database</a></li>
+                <li class="breadcrumb-item"><a href="/opendb/{{ db_name }}">{{ db_name }}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ table }}</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="col-6">
+        <div class="container text-start col-8">
+            <h1>{{ db_name }} > {{ table }}</h1>
+            <hr>
+            <p>Select from the following options to perform operations on the database.</p>
+            <hr>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Add Record</h5>
+                            <p class="card-text">Add a new record to the database table.</p>
+                        </div>
+                        <div class="card-footer">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                onclick="openModal('{{ db_name }}', '{{ table }}', 'add')" data-bs-target="#staticBackdrop">
+                                Add Record
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Edit Record</h5>
+                            <p class="card-text">Edit an existing record in the database table.</p>
+                        </div>
+                        <div class="card-footer">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary btn-sm"
+                                onclick="openModal('{{ db_name }}', '{{ table }}', 'edit_check')">
+                                Edit Record
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Delete Record</h5>
+                            <p class="card-text">Delete an existing record from the database table.</p>
+                        </div>
+                        <div class="card-footer">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary btn-sm"
+                                onclick="openModal('{{ db_name }}', '{{ table }}', 'delete')">
+                                Delete Record
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Search and Display Record</h5>
+                            <p class="card-text">Search for a record in the database table and display if it exists.</p>
+                        </div>
+                        <div class="card-footer">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary btn-sm"
+                                onclick="openModal('{{ db_name }}', '{{ table }}', 'search')">
+                                Search Record
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Display Table</h5>
+                            <p class="card-text">Display the complete database table.</p>
+                        </div>
+                        <div class="card-footer">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                data-bs-target="display" onclick="">
+                                Display Table
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal modal-lg fade" id="operationModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="operationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="operationModalLabel">Perform Operation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Dynamic Content -->
+                    <div id="modalContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

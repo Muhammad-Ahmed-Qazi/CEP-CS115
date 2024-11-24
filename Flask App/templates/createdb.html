@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP - Create DB</title>
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/fonts/bootstrap-icons.css">
+    <link rel="icon" href="static/database-fill.svg" type="image/icon type">
+</head>
+
+<body class="d-flex align-items-center justify-content-center m-5">
+
+    <div class="position-absolute top-0 start-0 p-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Create Database</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="col-6">
+        <div class="container text-start col-8">
+            <h1>Create a New Database</h1>
+            <hr>
+            <ul class="list-unstyled">
+                <li>
+                    <p class="">Steps to create a database:</p>
+                </li>
+                <li>
+                    <ul>
+                        <li>Enter a unique name for your database.</li>
+                        <li>Use the 'Add Table' button to add as many input fields as required.</li>
+                        <li>Enter names for each table.</li>
+                        <li>Use the dropdown button at each table input to show inputs for fields you want in your
+                            table.</li>
+                        <li>Enter field names and lengths.</li>
+                        <li>Use the 'Add field' button to add as many fields as required.</li>
+                        <li>Review and submit the form.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="text-danger">Note: Changes to the database are NOT possible after creation!</p>
+            <hr>
+            <form class="g-3" method="POST" action="{{ url_for('createdb') }}">
+                <div class="row g-3">
+                    <div class=" col-8 mb-5">
+                        <label for="db_name" class="form-label"><b>Database Name</b> *</label>
+                        <input type="text" class="form-control border-secondary" id="db_name" aria-describedby="db_help"
+                            name="db_name" required>
+                        <div id="db_help" class="form-text">Enter a unique name for your database.</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="mb-5" id="tables">
+                    <div class="row mb-5">
+                        <label for="table_1" class="form-label"><b>Table Name</b> *</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control border-secondary" id="table_1" name="tables[1][name]"
+                                required>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-secondary" type="button" onclick="addField(1)">
+                                <i class="bi bi-plus"></i>Fields
+                            </button>
+                        </div>
+                        <div class="g-3" id="fields_1">
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <label class="form-label">Field Name *</label>
+                                    <input type="text" class="form-control border-secondary"
+                                        name="tables[1][fields][0][name]" required>
+                                    <div id="pk_help" class="form-text pb-4">This field will be primary key for the table.
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <label class="form-label">Max. chr. Length *</label>
+                                            <input type="number" class="form-control border-secondary"
+                                                name="tables[1][fields][0][length]" placeholder="0" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="clearfix">
+                    <button type="button" class="btn btn-outline-secondary float-start" onclick="addTable()"><i
+                            class="bi bi-plus"></i>Add Table</button>
+                    <button type="submit" class="btn btn-primary float-end">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>

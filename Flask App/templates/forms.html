@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/bootstrap-icons.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icons/database-fill.svg') }}" type="image/icon type">
+</head>
+<body class="d-flex align-items-center justify-content-center vh-100">
+
+    <form class="g-3" method="POST" action="/perform_operation/search">
+        <div class="row g-3">
+            <div class="col-8 mb-1">
+                <label for="column_name" class="form-label"><b>Column Name</b></label>
+                <input type="text" class="form-control" id="column_name" name="column_name" required>
+            </div>
+        </div>
+        <div class="clearfix">
+            <button type="submit" class="btn btn-primary float-start">Submit</button>
+        </div>
+    </form>
+    
+
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

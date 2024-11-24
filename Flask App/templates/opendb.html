@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP - Open DB</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/bootstrap-icons.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icons/database-fill.svg') }}" type="image/icon type">
+</head>
+
+<body class="d-flex align-items-center justify-content-center vh-100">
+
+    <div class="position-absolute top-0 start-0 p-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Open Database</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="col-6">
+        <div class="container text-start col-8">
+            <h1>Open a Database</h1>
+            <hr>
+            <p>Select an existing database from the list below to manage its records, modify its structure, or view its
+                contents.</p>
+            <hr>
+            <form class="g-3" method="POST" id="db_form">
+                <div class="row g-3">
+                    <div class=" col-8 mb-3 mt-5">
+                        <label for="db_name" class="form-label"><b>Database</b></label>
+                        <select class="form-select mb-3" id="db_name" name="db_name" required>
+                            {{ select_options | safe }}
+                        </select>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <button type="button" class="btn btn-primary float-start" onclick="submit_db()">Open Database</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
