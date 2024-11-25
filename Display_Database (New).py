@@ -16,10 +16,6 @@ def display(db_name, table):
     fields = get_fields(db_name)[table]        # Fetching fields
     records = get_records(db_name, table)      # Fetching records
 
-    #Iterating on record:
-    for i in records:
-        element = i.strip()
-        element = element.split(', ')     # Converting the string present in the list to separate list separated by commas
 
     # Fetching Field Lengths And Names
 
@@ -33,26 +29,28 @@ def display(db_name, table):
         header += f"{field_names[field]:{field_lengths[field]}} |"    # Displaying each heading separated by pipelines
     print(header.strip())                                             #   Removing whitespaces and newline commands
 
-    '''
-    # Display Records (values of each field):
-    for record_key in range(len(records)):
-        record_values = records[record_key]
-        row=''
-    '''
+    #Iterating on record:
+    # Display Records (values of each field)
+    for record in records:  # Loop through all records
+        record = record.strip()  # Remove any leading/trailing whitespace/newline characters
+        if not record:  # Skip empty lines if any
+            continue
+        record_values = record.split(', ')  # Split the record into its individual values
+
 
     #   Fetching Each record one by one:
-    row = ''
-    for values, field in zip(element, range(len(field_names))):
+        row = ''
+        for values, field in zip(record_values, range(len(field_names))):
 
-       # To determine appropriate spaces and alignment of pipes from top to bottom
-        if len(field_names[field]) > field_lengths[field]:
-            col_length = len(field_names[field])
-        else:
-            col_length = field_lengths[field]
+        # To determine appropriate spaces and alignment of pipes from top to bottom
+            if len(field_names[field]) > field_lengths[field]:
+                col_length = len(field_names[field])
+            else:
+                col_length = field_lengths[field]
 
-        row += f'{str(values):{col_length}} |'      # To display each record separated by pipes
+            row += f'{str(values):{col_length}} |'      # To display each record separated by pipes
 
-    print(row.strip())
+        print(row.strip())
 
 # Calling function to display records:
 display(db_name, table)
