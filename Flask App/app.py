@@ -1,4 +1,4 @@
-from flask import Flask, flash, render_template, request
+from flask import Flask, render_template, request
 
 # Importing functions from other modules for database setup, file handling, data manipulation, and display.
 from other_modules.database_setup import create_database

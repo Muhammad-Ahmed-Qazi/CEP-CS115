@@ -187,6 +187,59 @@ def display_selected(db_name, table, data):
                 </thead>
                 <tbody class="table-group-divider">
                     <tr>"""
+    for value in record:
+        table += f'<td>{value}</td>'
+    table += """</tr>
+            </tbody>
+        </table>
+    </div>"""
 
-   
+    return table
+
+def display_all(db_name, table):
+    # Get the field names for the specified table in the database
+    fields = get_fields(db_name)[table]
+    
+    # Get all records for the specified table in the database
+    records = get_records(db_name, table)
+    
+    # Print the records for debugging purposes
+    # print("Records:", records)
+    
+    # If no records are found, return a warning message
+    if records == []:
+        return '<div class="alert alert-warning">Table is empty!</div>'
+    
+    # Start the HTML for displaying the table
+    table = """<div class="table-responsive">
+                    <table class="table ">
+                        <thead class="table-dark">
+                        <tr>"""
+    
+    # Create the table headers from the field names
+    for field in fields:
+        table += f'<th scope="col">{field}</th>'
+    
+    # Close the table header section
+    table += """</tr>
+                </thead>
+                <tbody class="table-group-divider">"""
+    
+    # Loop through each record and create a row in the table
+    for record in records:
+        table += """<tr>"""
+        
+        # Split each record by ", " and insert the values into table cells
+        for value in record.split(", "):
+            table += f'<td>{value}</td>'
+        
+        # Close the row
+        table += """</tr>"""
+    
+    # Close the table and div container
+    table += """</tbody>
+            </table>
+        </div>"""
+    
+    # Return the generated table HTML
     return table
