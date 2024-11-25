@@ -1,9 +1,19 @@
 # CEP-CS115
 A Python-based Simple Database Management System (DBMS) developed as part of the Complex Engineering Project (CEP) for the CS115 course. Includes features for database creation, record manipulation, and a command-line interface (CLI) for user interaction.
 
-## Overview
+## Project Group
 
-This project was made as an assignment for the first-year CP-115 Computer Programming course at the Department of Computer & Information Systems, NEDUET.
+**Course:** Computer Programming (CS-115)
+**Theory instructor:** Dr. Maria Waqas
+**Practical instructor:** Ms. Mehwish Raza
+**Semester:** CIS FE Fall '24
+
+**Group members**
+- CS-24045 - Muhammad Ahmed Qazi
+- CS-24038 - Usman Rasheed Siddiqui
+- CS-24039 - Huzaifa Hanif
+
+## Overview
 
 This project is a **Simple Database Management System (DBMS)** built using **Flask** (Python web framework) and **Bootstrap 5** for the front-end. The application allows users to create, manage, and manipulate databases and tables through a browser-based interface. It supports functionalities like creating tables, adding fields, and performing basic operations on the data.
 
@@ -32,19 +42,17 @@ This project requires several Python libraries. You can install them using `pip`
 The `requirements.txt` file contains a list of all dependencies required for the project, including:
 
 - Flask
-- Flask-WTF (for handling forms)
-- Flask-SQLAlchemy (for database management)
 - Other necessary packages (e.g., Bootstrap for styling)
 
 ### Setting up the project
 
 1. **Clone the repository (if not already done)**: You can clone this project using Git, or you can directly download the project files.
 
-	`git clone <repository-url>`
+	`git clone https://github.com/Muhammad-Ahmed-Qazi/CEP-CS115.git`
 
 2. **Navigate to the project directory**:
 
-	`cd <project-directory>`
+	`cd Flask\ App`
 
 3. **Install the dependencies**:
 
@@ -52,9 +60,7 @@ The `requirements.txt` file contains a list of all dependencies required for the
 
 ### Running the Flask App
 
-1. **Ensure the database is set up**: If the project involves setting up a new database, ensure that the database configuration is correctly defined in the `config.py` file.
-
-2. **Run the Flask development server**: Use the following command to run the Flask development server:
+1. **Run the Flask development server**: Use the following command to run the Flask development server:
 
 	`python app.py`
 	
@@ -118,3 +124,25 @@ Here is an overview of the project files and their purposes:
 5. **Page not loading or UI issues?**
     - Clear your browser cache and refresh the page.
     - Check the browser console for any JavaScript errors that might be affecting the frontend.
+
+## Requirements - Terminal App
+
+Before you begin, ensure you have the following installed on your system:
+
+- **Python 3.8+** (Recommended version)
+
+### Setting up the project
+
+1. **Clone the repository (if not already done)**: You can clone this project using Git, or you can directly download the project files.
+
+	`git clone https://github.com/Muhammad-Ahmed-Qazi/CEP-CS115.git`
+
+2. **Navigate to the project directory**:
+
+	`cd Terminal\ App`
+
+### Running the Flask App
+
+1. **Run the Python file**: Use the following command to run the file:
+
+	`python main.py`
