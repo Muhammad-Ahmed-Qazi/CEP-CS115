@@ -3,10 +3,10 @@ A Python-based Simple Database Management System (DBMS) developed as part of the
 
 ## Project Group
 
-**Course:** Computer Programming (CS-115)
-**Theory instructor:** Dr. Maria Waqas
-**Practical instructor:** Ms. Mehwish Raza
-**Semester:** CIS FE Fall '24
+- **Course:** Computer Programming (CS-115)
+- **Theory instructor:** Dr. Maria Waqas
+- **Practical instructor:** Ms. Mehwish Raza
+- **Semester:** CIS FE Fall '24
 
 **Group members**
 - CS-24045 - Muhammad Ahmed Qazi
