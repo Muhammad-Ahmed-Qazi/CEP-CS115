@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34d8cd4f-2e63-4200-bf38-dbc56507a6d4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Files/Sample/Courses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data Files/Sample/Courses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Files/Sample/Students.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data Files/Sample/Students.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Display_Database (New).py" beforeDir="false" afterPath="$PROJECT_DIR$/Display_Database (New).py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +37,7 @@
   "keyToString": {
     "Python.Databases Entries.executor": "Run",
     "Python.Display Database.executor": "Run",
-    "Python.Display_Database (New).executor": "Debug",
+    "Python.Display_Database (New).executor": "Run",
     "Python.Editing a Database Record (New).executor": "Run",
     "Python.Editing a Database Record.executor": "Run",
     "Python.In Class Exercise-Files.executor": "Run",
@@ -230,27 +231,12 @@
       <workItem from="1732380221936" duration="219000" />
       <workItem from="1732458262223" duration="1026000" />
       <workItem from="1732533054936" duration="1528000" />
+      <workItem from="1732535807688" duration="450000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Display_Database (New).py</url>
-          <line>37</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Display_Database (New).py</url>
-          <line>33</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Practise_py$In_Class_Exercise_Files.coverage" NAME="In Class Exercise-Files Coverage Results" MODIFIED="1732211706157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -266,7 +252,7 @@
     <SUITE FILE_PATH="coverage/CEP_CS115$file_handler.coverage" NAME="file_handler Coverage Results" MODIFIED="1731725472726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CEP_CS115$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1732195858936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Temp/666ff296-1bdc-4da0-9ae8-0678fb2644f8_CEP-CS115-muhammad.wip (1).zip.4f8/CEP-CS115-muhammad.wip" />
     <SUITE FILE_PATH="coverage/Editing_a_Database_Record__New__py$Editing_a_Database_Record__New_.coverage" NAME="Editing a Database Record (New) Coverage Results" MODIFIED="1732380356310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Display_Database__New__py$Display_Database__New_.coverage" NAME="Display_Database (New) Coverage Results" MODIFIED="1732534549943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Display_Database__New__py$Display_Database__New_.coverage" NAME="Display_Database (New) Coverage Results" MODIFIED="1732536248719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CEP_CS115$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1732195772739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Temp/995c1ac2-471b-48ca-bbf7-51eefc50e50c_CEP-CS115-muhammad.wip (1).zip.50c/CEP-CS115-muhammad.wip" />
     <SUITE FILE_PATH="coverage/CEP_CS115$Editing_a_Database_Record.coverage" NAME="Editing a Database Record Coverage Results" MODIFIED="1731864394427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CEP_CS115$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1732195838086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Temp/22cafe72-56be-42a3-ab53-858911a3784c_CEP-CS115-muhammad.wip (1).zip.84c/CEP-CS115-muhammad.wip" />

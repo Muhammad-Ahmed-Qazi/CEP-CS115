@@ -1,2 +1,3 @@
 CS-24039, Huzaifa, xyz@gmail.com, A
-CS-24038, Usman Rasheed, abc, A
+CS-24038, Usman Rasheed, abc@gmail.com, A
+CS-24045, Muhammad, efg@gmail.com, A

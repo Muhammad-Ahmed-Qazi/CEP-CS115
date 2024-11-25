@@ -23,10 +23,13 @@ def display(db_name, table):
     field_names = list(fields.keys())                   # Fetching field names
 
     # Display the field names as headings:
+    # For headings to be Bold And Italic
+    bold_italic = '\033[1m\033[3m'
+    reset = '\033[0m'
 
     header = ''
     for field in range(len(field_lengths)):
-        header += f"{field_names[field]:{field_lengths[field]}} |"    # Displaying each heading separated by pipelines
+        header += f"{bold_italic}{field_names[field]:{field_lengths[field]}}{reset} |"    # Displaying each heading separated by pipelines
     print(header.strip())                                             #   Removing whitespaces and newline commands
 
     #Iterating on record:
