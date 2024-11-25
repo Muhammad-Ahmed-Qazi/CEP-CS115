@@ -3,10 +3,10 @@ A Python-based Simple Database Management System (DBMS) developed as part of the
 
 ## Project Group
 
-- **Course:** Computer Programming (CS-115)
-- **Theory instructor:** Dr. Maria Waqas
-- **Practical instructor:** Ms. Mehwish Raza
-- **Semester:** CIS FE Fall '24
+**Course:** Computer Programming (CS-115)
+**Theory instructor:** Dr. Maria Waqas
+**Practical instructor:** Ms. Mehwish Raza
+**Semester:** CIS FE Fall '24
 
 **Group members**
 - CS-24045 - Muhammad Ahmed Qazi
@@ -26,7 +26,12 @@ This project is a **Simple Database Management System (DBMS)** built using **Fla
 - Perform CRUD operations (Create, Read, Update, Delete) on tables
 - User-friendly interface with modals for operations
 
-## Requirements
+## Two applications
+
+- **Flask App\***
+- Terminal App (secondary app)
+
+## Requirements - Flask App
 
 Before you begin, ensure you have the following installed on your system:
 
@@ -101,7 +106,7 @@ Here is an overview of the project files and their purposes:
 
 ### Troubleshooting
 
-1. **Flask not running?**    
+1. **Flask not running?**
     - Ensure you have activated your virtual environment.
     - Double-check if Flask is installed (`pip install flask`).
     - If you are using a specific port, make sure it's available.
