@@ -54,30 +54,75 @@ def format_data(record):
 
     return data_info[:-2] + '\n'
 
-# Edit a record
+# Edit a record - Muhammad Ahmed Qazi
+# def edit_record(db_name, table):
+#     orig_record = search_record(db_name, table)
+#     record = orig_record.split(",")
+
+#     if record != ['']:
+#         record = []
+
+#         print(f"\nEnter data for respective fields in '{table}':")
+#         # Get fields and respective lengths
+#         fields = get_fields(db_name)[table]
+
+#         for field in fields:
+#             while True:
+#                 data = input(f"{field}: ")
+#                 if 0 < len(data) <= fields[field]:
+#                     record.append(data)
+#                     break
+#                 else:
+#                     print(f"Input must have at least 1 and maximum {fields[field]} characters!")
+
+#         update_records(db_name, table, orig_record, format_data(record))
+#     else:
+#         print("\nRecord with this primary key entry does not exist.")
+
+# Edit a record - Usman Rasheed Siddiqui
 def edit_record(db_name, table):
-    orig_record = search_record(db_name, table)
-    record = orig_record.split(",")
+    '''This function enables user to edit a record in selected database user entered.'''
 
-    if record != ['']:
-        record = []
+    fields = get_fields(db_name)[table]  # Getting fields
 
-        print(f"\nEnter data for respective fields in '{table}':")
-        # Get fields and respective lengths
-        fields = get_fields(db_name)[table]
+    field_names = list(fields.keys())  # Getting field names
 
-        for field in fields:
+    fetch_record = search_record(db_name, table)
+
+    record = fetch_record.strip().split(",")
+
+     #Ensure that the record has the correct number of fields
+    if len(record) != len(field_names):
+        print(f"Error: Following Record does not exist!")
+        return
+
+
+    if record:                                                                  # Verifying that the record is not an empty list
+        for i, field in zip(range(len(field_names)), field_names):              # Proceed to editing the record
+
             while True:
-                data = input(f"{field}: ")
-                if 0 < len(data) <= fields[field]:
-                    record.append(data)
+                edit_record = input(f"Edit new record for {field}: ")               # Entering new value for the field
+                print()
+                print(f"Editing field '{field}' with value: {edit_record}")
+                print()
+                if 0 < len(edit_record) <= fields[field]:                       # Checking length of the input
+                    record[i] = edit_record                                     # Update the record at the correct index
                     break
-                else:
-                    print(f"Input must have at least 1 and maximum {fields[field]} characters!")
 
-        update_records(db_name, table, orig_record, format_data(record))
+                else:
+                    print(f"The length of the input must be from 1 character to {fields[field]} characters")
+
     else:
-        print("\nRecord with this primary key entry does not exist.")
+        print("Following record does not exist")
+        return
+
+
+    # Format the edited record for writing
+    formatted_edit = format_data(record)
+
+    update_records(db_name, table, fetch_record, formatted_edit)
+
+    print("Record successfully updated")
 
 # Delete a record using the primary key input by the user
 def delete_record(db_name, table, record):
