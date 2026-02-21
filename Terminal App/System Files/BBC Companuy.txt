@@ -1,0 +1,8 @@
+Tables
+['Departments']
+
+Fields & Lengths
+{'Departments': {'Name': 50, 'No. of Employees': 4}}
+
+Primary Keys
+{'Departments': 'Name'}
